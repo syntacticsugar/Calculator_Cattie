@@ -19,9 +19,9 @@ $("#_3").click(function() {
 console.log("PAY ATTENTION:");
 $(".integer").each(function(key,value) {
   console.log("key is:" + key + ", value is:" + value);
-  value.on( "click", function() {
+  value.onclick = function() {
     console.log(value.textContent);
-  });
+  };
 });
 console.log("DONE");
 console.log($(".integer"));
