@@ -4,24 +4,35 @@ console.log('why');
 var one = document.getElementById("_1");
 console.log(one);
 
+/*
 $("#_1").click(function() {
   $("#results").text( "bicky" )
 });
 
 $("#_2").click(function() {
-  $("#results").text( "2" )
+  $("#results").text( this.innerText )
 });
 
 $("#_3").click(function() {
   $("#results").text( "3" )
 });
+*/
 
+$(".integer").click( function() {
+  /*.innerText */
+  $("#results").text( this.innerText )
+});
+
+/*
 console.log("PAY ATTENTION:");
 $(".integer").each(function(key,value) {
   console.log("key is:" + key + ", value is:" + value);
   value.onclick = function() {
     console.log(value.textContent);
   };
+  $(value).click( function() {
+    console.log("jQuery value: " + value.textContent);
+  });
 });
 console.log("DONE");
 console.log($(".integer"));
@@ -32,4 +43,4 @@ console.log($(".integer"));
  * in the `#results` css element's text.
 */
 
-
+*/
